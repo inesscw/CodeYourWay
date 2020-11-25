@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Información del usuario</title>
+    <link rel="stylesheet" href="style_informacion.css">
 </head>
 <body>
-    <p>Nombre:</p>
-    <p>Apellidos:</p>
-    <p>Especialidad elegida:</p>
-    <p>Imagen</p>
-    <p>Lenguaje favorito:</p>
-    <p>Fecha de nacimiento:</p>
-    <p>Meses programando:</p>
+    <form action="" method="" enctype="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="">Apellidos</label>
+        <input type="text" placeholder="Apellidos">
+        <br>
+        <p>Especialidad elegida</p>
+        <select>
+            <optgroup label="Especialidad">
+                <option>Backend</option>
+                <option>Frontend</option>
+                <option>Fullstack</option>
+            </optgroup>
+         </select>
+        <br>
+        <p>Foto perfil</p>
+        <input type="file">
+        <p>Lenguaje favorito</p>
+        <select>
+            <optgroup label="Lenguajes">
+                <option>Java</option>
+                <option>JavaScript</option>
+                <option>PHP</option>
+                <option>Python</option>
+                <option>Ruby</option>
+                <option>C++</option>
+                <option>C#</option>
+                <option>Perl</option>
+            </optgroup>
+         </select> 
+         <br>    
+        <p>Fecha de nacimiento</p>
+        <input type="date">
+        <p>Meses programando</p>
+        <input type="number">
+        <br>
+        <p>Algo sobre ti</p>
+        <textarea placeholder="Escribe aquí" cols="25" rows="5"></textarea>
+        <br>
+        <input type="button" value="Guardar">
+
+    </form>
 </body>
 </html>
